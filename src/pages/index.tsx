@@ -6,6 +6,7 @@ export default function Home() {
       <Head>
         <title>Dashgo</title>
       </Head>
+      <div>home</div>
     </div>
   )
 }
