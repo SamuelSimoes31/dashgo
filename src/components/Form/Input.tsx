@@ -4,7 +4,6 @@ import {
   Input as ChakraInput,
   InputProps as ChakraInputProps
 } from '@chakra-ui/react';
-import React from 'react';
 
 interface InputProps extends ChakraInputProps {
   name: string;
@@ -14,7 +13,7 @@ interface InputProps extends ChakraInputProps {
 export default function Input({name,label, ...rest} : InputProps) {
   return (
     <FormControl>
-      {!!label && <FormLabel htmlFor={name}>Senha</FormLabel>}
+      {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
       <ChakraInput
         name={name}
         id={name}
