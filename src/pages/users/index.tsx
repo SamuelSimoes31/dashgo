@@ -16,6 +16,7 @@ import {
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import Sidebar from '../../components/Form/Sidebar';
 import Header from '../../components/Header';
+import Pagination from '../../components/Pagination';
 
 export default function UserList() {
   return (
@@ -31,7 +32,7 @@ export default function UserList() {
               size="sm"
               fontSize="sm"
               colorScheme="pink"
-              leftIcon={<Icon as={RiAddLine} fontSize="24"/>}
+              leftIcon={<Icon as={RiAddLine} fontSize="24" />}
             >
               Criar novo
             </Button>
@@ -67,7 +68,7 @@ export default function UserList() {
                     size="sm"
                     fontSize="sm"
                     colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine}  fontSize="16"/>}
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
                   >
                     Editar
                   </Button>
@@ -75,6 +76,7 @@ export default function UserList() {
               </Tr>
             </Tbody>
           </Table>
+          <Pagination />
         </Box>
       </Flex>
     </Box>
